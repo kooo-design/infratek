@@ -1,0 +1,373 @@
+/* Navbar */
+.custom-navbar {
+  background-color: #011145 !important;
+  height: 90px;
+  min-height: 90px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../img/school-1.png') center/cover no-repeat;
+  opacity: 0.5;
+  z-index: 0;
+}
+.hero-section > * {
+  position: relative;
+  z-index: 1;
+  min-height: 400px;
+}
+
+/* Hero Section News */
+.hero-section-news {
+  background: url('../img/bg-hero-news.jpg') center center/cover no-repeat;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-news-title {
+  color: #011145;
+  font-family: 'Lexend Zetta', Arial, sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Font Lexend Zetta */
+.lexend-zetta {
+  font-family: 'Lexend Zetta', Arial, sans-serif;
+}
+.inria-sans {
+  font-family: 'Inria Sans', Arial, sans-serif;
+}
+
+/* Button Contact Us */
+.btn-contact-us {
+  background-color: #010B2B;
+  color: #fff;
+}
+
+/* Partner Scroll Animation */
+#partner-scroll {
+  animation: partner-scroll 18s linear infinite;
+}
+@keyframes partner-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+#partner-scroll img {
+  display: inline-block;
+  margin-right: 32px;
+}
+#partner-scroll img:last-child {
+  margin-right: 0;
+}
+
+/* Social Media Card */
+.bg-sosmed {
+  background: url('../img/bg-sosmed.jpg') center/cover no-repeat;
+  border-radius: 20px;
+  /* opacity: 0.6; */
+}
+.card-custom {
+  width: 24rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card-body-custom {
+  background: rgba(255,255,255,0.85);
+  border-radius: 1rem;
+}
+.logo-sosmed {
+  border-radius: 0.5rem;
+}
+.card-img-custom {
+  border-radius: 0.75rem;
+}
+
+/* About Section Divider */
+.divider-vertical {
+  width: 3px;
+  height: 100%;
+  background-color: #00518A;
+  border-radius: 2px;
+}
+
+/* About Image */
+.about-img {
+  max-width: 500px;
+}
+
+/* Amplify Section */
+#scrolling-text {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  animation: scroll-horizontal 20s linear infinite;
+}
+@keyframes scroll-horizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Footer */
+footer.bg-primary {
+  background-color: #011145 !important;
+}
+
+/* Body padding for fixed navbar */
+body {
+  padding-top: 90px;
+  background: #fff;
+  font-family: 'Inria Sans', Arial, sans-serif;
+  color: #011145;
+}
+
+/* Card shadow width (untuk social media card) */
+.card.shadow {
+  width: 32rem;
+}
+
+/* News Section */
+.news-hero {
+  background: url('../img/school-1.png') center/cover no-repeat;
+  min-height: 320px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+.news-card {
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(1,17,69,0.08);
+  overflow: hidden;
+}
+.news-card .card-img-top {
+  border-radius: 18px 18px 0 0;
+  object-fit: cover;
+  height: 180px;
+}
+.news-divider {
+  width: 2px;
+  height: 100%;
+  background: #011145;
+  border-radius: 2px;
+}
+@media (max-width: 991px) {
+  .news-divider {
+    display: none;
+  }
+}
+.contact-box {
+  box-shadow: 0 2px 16px rgba(1,17,69,0.06);
+}
+.form-control:focus {
+  border-color: #011145;
+  box-shadow: 0 0 0 0.2rem rgba(1,17,69,0.08);
+}
+
+/* Service Card */
+.service-card {
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(1,17,69,0.08);
+  border: 1px solid #e5e9f2;
+  transition: box-shadow 0.2s;
+}
+.service-card:hover {
+  box-shadow: 0 4px 24px rgba(1,17,69,0.16);
+}
+.service-card .btn {
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Career Detail */
+.career-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 0 0 0;
+}
+
+.career-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.career-detail-title {
+  font-family: 'Lexend Zetta', Arial, sans-serif;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #011145;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.career-detail-apply-btn {
+  background: #011145;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 220px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+
+.career-detail-apply-btn:hover {
+  background: #003366;
+}
+
+.career-detail-back {
+  font-size: 2rem;
+  color: #011145;
+  text-decoration: none;
+  margin-bottom: 32px;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.career-detail-back:hover {
+  color: #003366;
+}
+
+.career-detail-divider {
+  border: none;
+  border-top: 2px solid #0074B7;
+  margin: 24px 0 32px 0;
+}
+
+.career-detail-section-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #011145;
+  font-family: 'Lexend Zetta', Arial, sans-serif;
+}
+
+.career-detail-section {
+  margin-bottom: 36px;
+}
+
+.amplify-title {
+  font-family: 'Lexend Zetta', Arial, sans-serif;
+  font-size: 3rem;
+  color: #011145;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .news-detail-image-wrapper {
+    height: 160px;
+  }
+  .amplify-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-news-title {
+    font-size: 1.5rem;
+  }
+  .news-detail-image-wrapper {
+    height: 120px;
+  }
+  .amplify-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Solution Section */
+.solution-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.solution-row {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+  margin-bottom: 0;
+}
+.solution-row.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.solution-img {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+.solution-img img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(1,11,43,0.08);
+}
+.solution-card {
+  flex: 1 1 50%;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(1,11,43,0.08);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.solution-card h5 {
+  font-family: 'Lexend Zetta', Arial, sans-serif;
+  color: #010B2B;
+  font-weight: bold;
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+}
+.solution-card p {
+  color: #4B5563;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+.solution-btn {
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 10px 32px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background: #010B2B;
+  border: none;
+}
+.solution-btn:hover {
+  background: #003366;
+}
+@media (max-width: 991.98px) {
+  .solution-row {
+    flex-direction: column !important;
+    gap: 18px;
+  }
+  .solution-img img {
+    height: 180px;
+  }
+  .solution-card {
+    padding: 28px 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  .solution-img img {
+    height: 120px;
+  }
+  .solution-card h5 {
+    font-size: 1.1rem;
+  }
+}
